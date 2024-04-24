@@ -11,10 +11,7 @@ require("dotenv").config();
 // Connect to MongoDB
 const mongoURI = process.env.MONGO_URI; // Get MongoDB URI from environment variable
 mongoose
-    .connect(mongoURI, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    })
+    .connect(mongoURI)
     .then(() => {
         console.log("Connected to the database");
         // Start the server after successful database connection
