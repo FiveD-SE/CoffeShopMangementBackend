@@ -2,10 +2,13 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 
+// Middleware to parse incoming JSON
+app.use(express.json());
+
 // Connect to MongoDB
 mongoose
     .connect(
-        "mongodb+srv://slowey:tlvptlvp@coffeeshopmangement.tmboii0.mongodb.net/?retryWrites=true&w=majority&appName=CoffeeShopMangement",
+        "mongodb+srv://slowey:tlvptlvp@coffeeshopdatabase.wspo7aw.mongodb.net/CoffeeShop",
         { useNewUrlParser: true }
     )
     .then(() => {
@@ -20,13 +23,15 @@ app.get("/", (req, res) => {
     res.send("Hello World!");
 });
 
+// Define user schema
 const userSchema = new mongoose.Schema({
     username: String,
     password: String,
     role: String,
 });
 
-const User = mongoose.model("User", userSchema);
+// Create a User model with the schema
+const User = mongoose.model("User", userSchema, "users");
 
 app.get("/users", async (req, res) => {
     try {
