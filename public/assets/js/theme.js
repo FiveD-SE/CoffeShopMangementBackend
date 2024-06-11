@@ -10,18 +10,19 @@
 */
 // -----------------------------
 
-
-(function($) {
+(function ($) {
     "use strict";
-
-
 
     /*---------------------
     preloader
     --------------------- */
 
-    $(window).on('load', function() {
-        $('#preloader').delay(1000).fadeOut('slow', function() { $(this).remove(); });
+    $(window).on("load", function () {
+        $("#preloader")
+            .delay(1000)
+            .fadeOut("slow", function () {
+                $(this).remove();
+            });
     });
 
     //=========================
@@ -30,10 +31,8 @@
 
     //ACTIVE CURRENT MENU WHILE SCROLLING
 
-    $(window).on("scroll", function() {
-
+    $(window).on("scroll", function () {
         activeMenuItem($(".nav-menu"));
-
     });
 
     // function for active menuitem
@@ -47,18 +46,22 @@
             nav_height = nav.outerHeight(),
             home = nav.find(" > ul > li:first");
 
-
-        sections.each(function() {
+        sections.each(function () {
             var top = $(this).offset().top - nav_height - 40,
                 bottom = top + $(this).outerHeight();
 
             if (cur_pos >= top && cur_pos <= bottom) {
                 nav.find("> ul > li > a").parent().removeClass("active");
-                nav.find("a[href='#" + $(this).attr('id') + "']").parent().addClass("active");
+                nav.find("a[href='#" + $(this).attr("id") + "']")
+                    .parent()
+                    .addClass("active");
             } else if (cur_pos === 2) {
                 nav.find("> ul > li > a").parent().removeClass("active");
                 home.addClass("active");
-            } else if ($(window).scrollTop() + windowHeight > documentHeight - 400) {
+            } else if (
+                $(window).scrollTop() + windowHeight >
+                documentHeight - 400
+            ) {
                 nav.find("> ul > li > a").parent().removeClass("active");
             }
         });
@@ -72,14 +75,24 @@
         var links = $links;
         var topGap = $topGap;
 
-        links.on("click", function() {
-            if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+        links.on("click", function () {
+            if (
+                location.pathname.replace(/^\//, "") ===
+                    this.pathname.replace(/^\//, "") &&
+                location.hostname === this.hostname
+            ) {
                 var target = $(this.hash);
-                target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+                target = target.length
+                    ? target
+                    : $("[name=" + this.hash.slice(1) + "]");
                 if (target.length) {
-                    $("html, body").animate({
-                        scrollTop: target.offset().top - topGap
-                    }, 1000, "easeInOutExpo");
+                    $("html, body").animate(
+                        {
+                            scrollTop: target.offset().top - topGap,
+                        },
+                        1000,
+                        "easeInOutExpo"
+                    );
                     return false;
                 }
             }
@@ -87,15 +100,15 @@
         });
     }
 
-    $(window).on("load", function() {
+    $(window).on("load", function () {
         smoothScrolling($(".main-menu > nav > ul > li > a[href^='#']"), 70);
     });
 
     //=========================
     // Slick Nav Activation
     //=========================
-    $('.nav-menu > ul').slicknav({
-        'prependTo': '.mobile_menu'
+    $(".nav-menu > ul").slicknav({
+        prependTo: ".mobile_menu",
     });
 
     /*---------------------
@@ -116,21 +129,21 @@
             dotsEach: true,
             responsive: {
                 0: {
-                    items: 1
+                    items: 1,
                 },
                 480: {
-                    items: 3
+                    items: 3,
                 },
                 760: {
-                    items: 3
+                    items: 3,
                 },
                 1080: {
-                    items: 5
+                    items: 5,
                 },
                 1920: {
-                    items: 5
-                }
-            }
+                    items: 5,
+                },
+            },
         });
     }
     screen_slider();
@@ -152,21 +165,21 @@
             dotsEach: true,
             responsive: {
                 0: {
-                    items: 2
+                    items: 2,
                 },
                 480: {
-                    items: 3
+                    items: 3,
                 },
                 760: {
-                    items: 4
+                    items: 4,
                 },
                 1080: {
-                    items: 4
+                    items: 4,
                 },
                 1920: {
-                    items: 4
-                }
-            }
+                    items: 4,
+                },
+            },
         });
     }
     client_carousel();
@@ -188,21 +201,21 @@
             dotsEach: true,
             responsive: {
                 0: {
-                    items: 1
+                    items: 1,
                 },
                 480: {
-                    items: 1
+                    items: 1,
                 },
                 760: {
-                    items: 1
+                    items: 1,
                 },
                 1080: {
-                    items: 2
+                    items: 2,
                 },
                 1920: {
-                    items: 2
-                }
-            }
+                    items: 2,
+                },
+            },
         });
     }
     testimonial_slider();
@@ -211,30 +224,30 @@
     MagnificPopup Activation
     -------------------------------- */
     /* magnificPopup video view */
-    $('.expand-video').magnificPopup({
-        type: 'iframe'
+    $(".expand-video").magnificPopup({
+        type: "iframe",
     });
 
     /*------------------------------
     YTP activation
     -------------------------------- */
-    $(window).on('load', function() {
+    $(window).on("load", function () {
         var myPlayer = $("#bgndVideo").YTPlayer();
     });
 
     /*-----------------------------
     Warm Canvas activation
     ------------------------------- */
-    if ($('.warm-canvas').length) {
-        $('.warm-canvas').glassyWorms({
-            colors: ['#fff', '#c2c2c2'],
+    if ($(".warm-canvas").length) {
+        $(".warm-canvas").glassyWorms({
+            colors: ["#fff", "#c2c2c2"],
             useStyles: true,
             numParticles: 500,
             tailLength: 20,
             maxForce: 8,
             friction: 0.75,
             gravity: 9.81,
-            interval: 3
+            interval: 3,
             // colors: ['#000'],
             // element: $('<canvas class="worms"></canvas>')[0]
         });
@@ -243,10 +256,10 @@
     /*------------------------------
          counter
     ------------------------------ */
-    
-    $('.counter').counterUp({
+
+    $(".counter").counterUp({
         delay: 20,
-        time: 2000
+        time: 2000,
     });
 
     /*-----------------------------
@@ -254,7 +267,7 @@
     ------------------------------- */
     function bgParallax() {
         if ($(".parallax").length) {
-            $(".parallax").each(function() {
+            $(".parallax").each(function () {
                 var height = $(this).position().top;
                 var resize = height - $(window).scrollTop();
                 var parallaxSpeed = $(this).data("speed");
@@ -266,12 +279,12 @@
                     backgroundImage: "url(" + img + ")",
                     backgroundPosition: "50%" + positionValue,
                     backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat"
+                    backgroundRepeat: "no-repeat",
                 });
 
                 if (window.innerWidth < 768) {
                     $(this).css({
-                        backgroundPosition: "center center"
+                        backgroundPosition: "center center",
                     });
                 }
             });
@@ -279,10 +292,7 @@
     }
     bgParallax();
 
-    $(window).on("scroll", function() {
-
+    $(window).on("scroll", function () {
         bgParallax();
     });
-
-
-}(jQuery));
+})(jQuery);
