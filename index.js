@@ -34,13 +34,9 @@ app.post("/create-payment-link", async (req, res) => {
         description: req.body.description,
     };
 
-    if (
-        !Number.isInteger(body.orderCode) ||
-        body.orderCode <= 0 ||
-        body.orderCode > 9007199254740991
-    ) {
+    if (!body.orderCode || !body.amount || !body.description) {
         return res.status(400).json({
-            error: "Invalid orderCode. It must be a positive integer less than or equal to 9007199254740991.",
+            error: "orderCode, amount, and description are required",
         });
     }
 
