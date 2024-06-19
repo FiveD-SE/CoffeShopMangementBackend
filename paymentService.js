@@ -9,6 +9,8 @@ const createPaymentLink = async (body) => {
     body.returnUrl = `${YOUR_DOMAIN}/success.html`;
     body.cancelUrl = `${YOUR_DOMAIN}/cancel.html`;
 
+    console.log("Creating payment link with body:", body);
+
     try {
         const paymentLinkResponse = await payOS.createPaymentLink(body);
         return paymentLinkResponse.checkoutUrl;

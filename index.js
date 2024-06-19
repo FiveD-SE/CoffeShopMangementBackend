@@ -28,22 +28,29 @@ app.delete("/users/:uid", async (req, res) => {
 });
 
 app.post("/create-payment-link", async (req, res) => {
+    console.log("Received create-payment-link request with body:", req.body);
     const body = {
         orderCode: Number(req.body.orderCode),
         amount: req.body.amount,
         description: req.body.description,
     };
 
-    if (!body.orderCode || !body.amount || !body.description) {
+    if (
+        !Number.isInteger(body.orderCode) ||
+        body.orderCode <= 0 ||
+        body.orderCode > 9007199254740991
+    ) {
         return res.status(400).json({
-            error: "orderCode, amount, and description are required",
+            error: "Invalid orderCode. It must be a positive integer less than or equal to 9007199254740991.",
         });
     }
 
     try {
         const paymentUrl = await paymentService.createPaymentLink(body);
+        console.log("Created payment link:", paymentUrl);
         res.json({ paymentUrl });
     } catch (error) {
+        console.error("Error creating payment link:", error);
         res.status(500).json({ error: error.message });
     }
 });
@@ -55,6 +62,7 @@ app.get("/payment-link/:orderCode", async (req, res) => {
         );
         res.json(orderInfo);
     } catch (error) {
+        console.error("Error fetching payment link information:", error);
         res.status(500).json({ error: error.message });
     }
 });
