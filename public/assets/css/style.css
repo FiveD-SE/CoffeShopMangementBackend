@@ -280,7 +280,7 @@ END Header Area
 }
 
 .slider-img img {
-  max-height: 100%;
+  max-height: 200%;
 }
 
 .slider-inner {
@@ -441,7 +441,7 @@ END Service Area
   bottom: 0;
   height: 2px;
   width: 130px;
-  background-color: #5a10fb;
+  background-color: #00a188;
   left: calc(50% - 65px);
 }
 
@@ -456,7 +456,7 @@ END Service Area
   bottom: -3px;
   height: 8px;
   width: 8px;
-  background-color: #5a10fb;
+  background-color: #00a188;
   left: calc(50% - 4px);
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -581,7 +581,7 @@ END Feature Area
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(89, 30, 251, 0.9);
+  background-color: rgb(0, 161, 136, 0.8);
 }
 
 .achivement-container {
@@ -650,7 +650,7 @@ END Achivement Area
 .screen-slider .owl-dots .owl-dot {
   height: 15px;
   width: 15px;
-  border: 1px solid #5a10fb;
+  border: 1px solid #00a188;
   border-radius: 50%;
   display: inline-block;
   margin: 0px 2px;
@@ -660,7 +660,7 @@ END Achivement Area
 }
 
 .screen-slider .owl-dots .active {
-  background-color: #5a10fb;
+  background-color: #00a188;
 }
 
 /*===========================
@@ -723,7 +723,6 @@ END Screen Area
 .tst-social li a {
   font-size: 20px;
   color: #555;
-  margin: 0px 5px;
 }
 .tst-social li a:hover {
   color: #5a0efb;
@@ -770,7 +769,7 @@ END Testimonial Area
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(89, 30, 251, 0.9);
+  background-color: rgb(0, 161, 136, 0.8);
 }
 .video-area h2 {
   font-size: 40px;
@@ -787,7 +786,7 @@ END Testimonial Area
 }
 .video-area a {
   font-size: 22px;
-  color: #7f21e6;
+  color: rgb(0, 161, 136);
   height: 50px;
   width: 50px;
   position: relative;
