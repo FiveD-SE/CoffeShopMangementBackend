@@ -33,20 +33,17 @@
 
 -----------------------------------------------------------------------------------*/
 
-
 /*----------------------------------------*/
-
 
 /*  1. Theme default CSS
 /*----------------------------------------*/
 
-
 /*google font*/
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900');
+@import url("https://fonts.google.com/share?selection.family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900");
 
 .clear {
-    clear: both
+    clear: both;
 }
 
 ::-moz-selection {
@@ -62,15 +59,15 @@
 }
 
 .no-mar {
-    margin: 0!important;
+    margin: 0 !important;
 }
 
 .no-pad {
-    padding: 0!important;
+    padding: 0 !important;
 }
 
 .no-top-pad {
-    padding-top: 0!important;
+    padding-top: 0 !important;
 }
 
 .text-left {
@@ -133,7 +130,6 @@ textarea {
     letter-spacing: 1px;
 }
 
-
 /*==========================
 2.1 Header Area
 ===========================*/
@@ -143,7 +139,7 @@ textarea {
     top: 0;
     width: 100%;
     z-index: 998;
-    background-color: #5c1ef9;
+    background-color: #00917b;
 }
 
 .menu-area {
@@ -151,7 +147,8 @@ textarea {
     align-items: center;
 }
 
-.logo {}
+.logo {
+}
 
 .logo a {
     display: inline-block;
@@ -165,7 +162,8 @@ textarea {
     text-align: right;
 }
 
-.main-menu nav ul {}
+.main-menu nav ul {
+}
 
 .main-menu nav ul li {
     display: inline-block;
@@ -183,7 +181,7 @@ textarea {
 }
 
 .main-menu nav ul li a:before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: 22px;
@@ -200,10 +198,10 @@ textarea {
     width: 70%;
 }
 
-
 /*dropdown menu area start*/
 
-.mobile_menu {}
+.mobile_menu {
+}
 .slicknav_menu .slicknav_menutxt {
     display: none;
 }
@@ -262,7 +260,6 @@ textarea {
     letter-spacing: 0.01em;
 }
 
-
 /*==========================
 END Header Area
 ===========================*/
@@ -275,17 +272,19 @@ END Header Area
     display: flex;
     align-items: center;
     height: 800px;
-    background: #5d12f8;
+    background: #00a188;
     padding-top: 80px;
 }
 
-.slider-img {}
-
-.slider-img img {
-    max-height: 100%;
+.slider-img {
 }
 
-.slider-inner {}
+.slider-img img {
+    max-height: 200%;
+}
+
+.slider-inner {
+}
 
 .slider-inner h2 {
     font-size: 48px;
@@ -335,37 +334,37 @@ END Header Area
     padding-left: 2px;
 }
 
-
 /*with-gradiant*/
-.with-gradiant{
+.with-gradiant {
     position: relative;
 }
-.with-gradiant:before{
-    content: '';
+.with-gradiant:before {
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
     opacity: 0.8;
-    background: rgba(0, 0, 0, 0) linear-gradient(90deg, #ffdc57, #5b1ffa) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(90deg, #ffdc57, #5b1ffa) repeat
+        scroll 0 0;
 }
-.full-opacity:before{
+.full-opacity:before {
     opacity: 1;
-    background: rgba(0, 0, 0, 0) linear-gradient(90deg, #ffdc57, #5b1ffa) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(90deg, #ffdc57, #5b1ffa) repeat
+        scroll 0 0;
 }
-.warm-canvas{
-    background: rgba(0, 0, 0, 0) linear-gradient(90deg, #ffdc57, #5b1ffa) repeat scroll 0 0;
+.warm-canvas {
+    background: rgba(0, 0, 0, 0) linear-gradient(90deg, #ffdc57, #5b1ffa) repeat
+        scroll 0 0;
 }
-canvas.worms.sketch{
+canvas.worms.sketch {
     max-width: 100%;
 }
-
 
 /*===========================
 END Slider Area
 ===========================*/
-
 
 /*===========================
 2.3 Service Area
@@ -404,17 +403,16 @@ END Slider Area
     font-size: 15px;
 }
 
-
 /*===========================
 END Service Area
 ===========================*/
-
 
 /*===========================
 2.4 About Area
 ===========================*/
 
-.about-area {}
+.about-area {
+}
 
 .section-title {
     text-align: center;
@@ -432,33 +430,33 @@ END Service Area
     padding-bottom: 20px;
 }
 
-.section-title.text-white h2{
+.section-title.text-white h2 {
     color: #fff;
 }
 
 .section-title h2:before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     height: 2px;
     width: 130px;
-    background-color: #5a10fb;
+    background-color: #00a188;
     left: calc(50% - 65px);
 }
 
-.section-title.text-white h2:before{
+.section-title.text-white h2:before {
     background-color: #fff;
 }
 
 .section-title h2:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: -3px;
     height: 8px;
     width: 8px;
-    background-color: #5a10fb;
+    background-color: #00a188;
     left: calc(50% - 4px);
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -466,7 +464,7 @@ END Service Area
     transform: rotate(45deg);
 }
 
-.section-title.text-white h2:after{
+.section-title.text-white h2:after {
     background-color: #fff;
 }
 
@@ -475,33 +473,38 @@ END Service Area
     font-weight: 500;
     color: #666666;
 }
-.section-title.text-white p{
+.section-title.text-white p {
     color: #fff;
 }
-.about-left-img {}
+.about-left-img {
+}
 
 .about-left-img img {
     max-width: 100%;
 }
 
-.about-content {}
+.about-content {
+}
+
+.about-content-text {
+    font-size: 16px;
+}
 
 .about-content p {
     color: #666666;
     margin-bottom: 25px;
 }
 
-
 /*===========================
 END About Area
 ===========================*/
-
 
 /*===========================
 2.5 Feature Area
 ===========================*/
 
-.feature-area {}
+.feature-area {
+}
 
 .ft-content {
     margin-top: 76px;
@@ -547,12 +550,20 @@ END About Area
     max-width: 100%;
 }
 
-
+.iphone-img {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    margin-top: 50px;
+    width: 250px;
+    justify-content: center;
+    align-self: center;
+    transform: translateX(-50%);
+}
 
 /*===========================
 END Feature Area
 ===========================*/
-
 
 /*===========================
 2.6 Achivement Area
@@ -564,15 +575,20 @@ END Feature Area
 }
 
 .achivement-area:before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(89, 30, 251,0.9);
+    background-color: rgb(0, 161, 136, 0.8);
 }
 
+.achivement-container {
+    justify-content: space-between;
+    flex: 1;
+    display: flex;
+}
 .ach-single {
     text-align: center;
 }
@@ -583,8 +599,8 @@ END Feature Area
     margin-bottom: 35px;
 }
 
-.ach-single>p,
-.ach-single>span {
+.ach-single > p,
+.ach-single > span {
     font-size: 41px;
     font-weight: 700;
     color: #fff;
@@ -600,12 +616,9 @@ END Feature Area
     letter-spacing: 0;
 }
 
-
-
 /*===========================
 END Achivement Area
 ===========================*/
-
 
 /*===========================
 2.7 Screen Area
@@ -637,7 +650,7 @@ END Achivement Area
 .screen-slider .owl-dots .owl-dot {
     height: 15px;
     width: 15px;
-    border: 1px solid #5a10fb;
+    border: 1px solid #00a188;
     border-radius: 50%;
     display: inline-block;
     margin: 0px 2px;
@@ -647,25 +660,25 @@ END Achivement Area
 }
 
 .screen-slider .owl-dots .active {
-    background-color: #5a10fb;
+    background-color: #00a188;
 }
-
 
 /*===========================
 END Screen Area
 ===========================*/
 
-
 /*===========================
 2.8 Testimonial Area
 ===========================*/
 
-.testimonial-area {}
+.testimonial-area {
+}
 
-.testimonial-slider {}
+.testimonial-slider {
+}
 
 .single-tst {
-        text-align: center;
+    text-align: center;
     border: 2px solid #5a10fb;
     border-radius: 10px;
     margin-top: 109px;
@@ -681,26 +694,26 @@ END Screen Area
     z-index: 1;
     margin-bottom: 22px;
     border-radius: 50%;
-    box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
 
 .single-tst h4 {
-	font-size: 20px;
+    font-size: 20px;
     font-weight: 500;
     color: #232323;
     letter-spacing: 0;
 }
 
 .single-tst span {
-	font-size: 15px;
+    font-size: 15px;
     color: #666666;
     letter-spacing: 0;
     font-weight: 500;
 }
 
 .single-tst p {
-	color: #666666;
-	margin: 8px 0px 20px;
+    color: #666666;
+    margin: 8px 0px 20px;
 }
 
 .tst-social li {
@@ -708,12 +721,11 @@ END Screen Area
 }
 
 .tst-social li a {
-	font-size: 20px;
+    font-size: 20px;
     color: #555;
-    margin: 0px 5px;
 }
 .tst-social li a:hover {
-	color: #5a0efb;
+    color: #5a0efb;
 }
 
 .testimonial-slider .owl-dots {
@@ -737,7 +749,6 @@ END Screen Area
     background-color: #5a10fb;
 }
 
-
 /*===========================
 END Testimonial Area
 ===========================*/
@@ -746,39 +757,39 @@ END Testimonial Area
 2.9 Video Area
 ===========================*/
 .video-area {
-	text-align: center;
+    text-align: center;
     position: relative;
     background: url(../img/bg/ach-bg-img.jpg) center center/cover no-repeat;
 }
 
 .video-area:before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(89, 30, 251,0.9);
+    background-color: rgb(0, 161, 136, 0.8);
 }
-.video-area h2{
-	font-size: 40px;
-	font-weight: 500;
-	color: #ffffff;
-	letter-spacing: 0;
-	margin-bottom: 14px;
+.video-area h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 0;
+    margin-bottom: 14px;
     line-height: 42px;
 }
-.video-area p{
-	color: #fff;
-	font-weight: 500;
-	font-size: 14px;
+.video-area p {
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
 }
-.video-area a{
-	font-size: 22px;
-    color: #7f21e6;
+.video-area a {
+    font-size: 22px;
+    color: rgb(0, 161, 136);
     height: 50px;
     width: 50px;
-	position: relative;
+    position: relative;
     border-radius: 50%;
     text-align: center;
     line-height: 53px;
@@ -788,8 +799,8 @@ END Testimonial Area
     margin-top: 50px;
 }
 .video-area a:before,
-.video-area a:after{
-	content: '';
+.video-area a:after {
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -798,38 +809,38 @@ END Testimonial Area
     border: 1px solid #fff;
     border-radius: 50%;
 }
-.video-area a:before{
-	-webkit-animation: scaling 1s linear 0s infinite;
-	-o-animation: scaling 1s linear 0s infinite;
-	animation: scaling 1s linear 0s infinite;
+.video-area a:before {
+    -webkit-animation: scaling 1s linear 0s infinite;
+    -o-animation: scaling 1s linear 0s infinite;
+    animation: scaling 1s linear 0s infinite;
 }
-.video-area a:after{
-	-webkit-animation: scaling 1s linear 0.3s infinite;
-	-o-animation: scaling 1s linear 0.3s infinite;
-	animation: scaling 1s linear 0.3s infinite;
+.video-area a:after {
+    -webkit-animation: scaling 1s linear 0.3s infinite;
+    -o-animation: scaling 1s linear 0.3s infinite;
+    animation: scaling 1s linear 0.3s infinite;
 }
-@keyframes scaling{
-	0%{
-		opacity: 0;
-		-webkit-transform: scale(1);
-		-ms-transform: scale(1);
-		-o-transform: scale(1);
-		transform: scale(1);
-	}
-	15%{
-		opacity: 0.7;
-		-webkit-transform: scale(1.05);
-		-ms-transform: scale(1.05);
-		-o-transform: scale(1.05);
-		transform: scale(1.05);
-	}
-	100%{
-		opacity: 0;
-		-webkit-transform: scale(2);
-		-ms-transform: scale(2);
-		-o-transform: scale(2);
-		transform: scale(2);
-	}
+@keyframes scaling {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    15% {
+        opacity: 0.7;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+        -o-transform: scale(2);
+        transform: scale(2);
+    }
 }
 
 /*===========================
@@ -839,26 +850,27 @@ END Video Area
 /*===========================
 2.10 Pricing Area
 ===========================*/
-.pricing-area{}
-.single-price{
+.pricing-area {
+}
+.single-price {
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0px 0px 9px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.05);
     padding-bottom: 35px;
     text-align: center;
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
-.single-price:hover{
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+.single-price:hover {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 }
-.prc-head{
-        background: #5a10fb;
+.prc-head {
+    background: #5a10fb;
     text-align: center;
     padding: 40px;
 }
-.prc-head span{
+.prc-head span {
     font-size: 24px;
     font-weight: 500;
     color: #fff;
@@ -866,29 +878,29 @@ END Video Area
     margin-bottom: 12px;
     display: block;
 }
-.prc-head h5{
+.prc-head h5 {
     font-size: 40px;
     color: #ffffff;
     letter-spacing: 0;
     font-weight: 500;
     line-height: 53px;
 }
-.prc-head h5 small{
+.prc-head h5 small {
     color: #fff;
 }
-.single-price ul{
+.single-price ul {
     text-align: center;
     margin-top: 10px;
 }
-.single-price ul li{
-        font-weight: 400;
+.single-price ul li {
+    font-weight: 400;
     font-size: 14px;
     color: #666666;
     line-height: 16px;
     margin-top: 19px;
     letter-spacing: 0;
 }
-.single-price a{
+.single-price a {
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 0;
@@ -899,7 +911,7 @@ END Video Area
     display: inline-block;
     margin-top: 44px;
 }
-.single-price a:hover{
+.single-price a:hover {
     color: #fff;
     background-color: #591efb;
 }
@@ -911,44 +923,51 @@ END Pricing Area
 /*===========================
 2.11 Team Area
 ===========================*/
-.team-area{}
-.single-team{
+.team-area {
+}
+
+.single-team {
     text-align: center;
     overflow: hidden;
     border-radius: 3px;
     padding-bottom: 30px;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
-.single-team:hover{
-    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+.single-team:hover {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
-.team-thumb{
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-thumb {
     margin: 40px 0px;
 }
-.team-thumb img{
+.team-thumb img {
     max-width: 160px;
     border-radius: 50%;
+    max-height: 160px;
 }
-.single-team h4{
-        font-size: 20px;
+.single-team h4 {
+    font-size: 20px;
     font-weight: 500;
     color: #232323;
     letter-spacing: 0;
     margin-bottom: 8px;
 }
-.single-team span{
+.single-team span {
     display: block;
     color: #666;
     font-weight: 400;
     letter-spacing: 0;
 }
-.single-team ul{
+.single-team ul {
     margin-top: 40px;
 }
-
 
 /*===========================
 2.11 Team Area
@@ -965,14 +984,14 @@ END Pricing Area
 }
 
 .call-to-action:before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
     z-index: -1;
-    background-color: rgba(89, 30, 251,0.9);
+    background-color: rgba(89, 30, 251, 0.9);
 }
 .download-btns a {
     margin: 0px 32px;
@@ -988,7 +1007,7 @@ END Pricing Area
     color: #fff;
     letter-spacing: 0;
 }
-.download-btns a:hover{
+.download-btns a:hover {
     background-color: #fff;
     color: #5c1ef9;
 }
@@ -998,7 +1017,6 @@ END Pricing Area
     vertical-align: middle;
 }
 
-
 /*===========================
 END Call To Action
 ===========================*/
@@ -1006,30 +1024,34 @@ END Call To Action
 /*===========================
 2.13 Blog Post
 ===========================*/
-.blog-post{}
-.single-post{}
+.blog-post {
+}
+.single-post {
+}
 .single-post a {
     display: block;
     margin-bottom: 7px;
 }
-.single-post a >img{
+.single-post a > img {
     border-radius: 5px 5px 0px 0px;
     max-width: 100%;
 }
-.single-post .blog-meta{}
-.single-post .blog-meta ul{}
-.single-post .blog-meta ul li{
+.single-post .blog-meta {
+}
+.single-post .blog-meta ul {
+}
+.single-post .blog-meta ul li {
     display: inline-block;
     font-size: 12px;
     color: #666666;
     letter-spacing: 0;
     margin-right: 10px;
 }
-.single-post .blog-meta ul li i{
+.single-post .blog-meta ul li i {
     margin-right: 5px;
     color: #444;
 }
-.single-post h2 a{
+.single-post h2 a {
     display: block;
     font-size: 20px;
     font-weight: 500;
@@ -1038,10 +1060,10 @@ END Call To Action
     margin-top: 7px;
     letter-spacing: 0;
 }
-.single-post h2 a:hover{
+.single-post h2 a:hover {
     color: #5a10fb;
 }
-.single-post p{
+.single-post p {
     color: #555;
     letter-spacing: 0.01em;
 }
@@ -1053,9 +1075,11 @@ END Blog Post
 /*===========================
 2.14 Clinet Area
 ===========================*/
-.clinet-area{}
-.client-carousel{}
-.client-carousel img{
+.clinet-area {
+}
+.client-carousel {
+}
+.client-carousel img {
     border: 1px solid #8422f9;
     border-left: none;
     border-right: none;
@@ -1069,24 +1093,27 @@ END Blog Post
 /*===========================
 END Contact Area
 ===========================*/
-.contact-area{}
-.contact-form{}
-.contact-form form{}
+.contact-area {
+}
+.contact-form {
+}
+.contact-form form {
+}
 .contact-form input,
-.contact-form textarea{
-        width: 100%;
+.contact-form textarea {
+    width: 100%;
     height: 45px;
     margin-bottom: 20px;
     padding-left: 15px;
     border-radius: 3px;
     border: none;
-    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
     color: #222;
 }
-.contact-form textarea{
+.contact-form textarea {
     min-height: 165px;
 }
-.contact-form #send{
+.contact-form #send {
     height: 45px;
     width: 150px;
     background: #5a10fb;
@@ -1097,39 +1124,40 @@ END Contact Area
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
-.contact-form #send:hover{
+.contact-form #send:hover {
     background-color: #444;
 }
-.contact_info{
+.contact_info {
     padding-left: 40px;
 }
-.contact_info .s-info{
+.contact_info .s-info {
     margin-bottom: 14px;
 }
-.s-info i{
-        font-size: 21px;
+.s-info i {
+    font-size: 21px;
     color: #591efb;
     float: left;
     margin-right: 14px;
     margin-top: 6px;
 }
-.s-info .meta-content{
+.s-info .meta-content {
     overflow: hidden;
 }
-.s-info .meta-content span{
-        font-size: 15px;
+.s-info .meta-content span {
+    font-size: 15px;
     color: #666;
     font-weight: 400;
     display: block;
 }
-.c-social{
+.c-social {
     margin-top: 25px;
 }
-.c-social ul{}
-.c-social ul li{
+.c-social ul {
+}
+.c-social ul li {
     display: inline-block;
 }
-.c-social ul li a{
+.c-social ul li a {
     display: block;
     height: 50px;
     width: 50px;
@@ -1142,7 +1170,7 @@ END Contact Area
     margin-right: 6px;
 }
 
-.c-social ul li a:hover{
+.c-social ul li a:hover {
     background-color: #444;
 }
 
@@ -1151,21 +1179,22 @@ END Contact Area
 ===========================*/
 
 /*footer area*/
-.footer-area{
+.footer-area {
     height: 80px;
     text-align: center;
-    background-color: #5a10fb;
+    background-color: #00917b;
     display: flex;
     align-items: center;
 }
-.footer-area p{
+.footer-area p {
     color: #ffffff;
 }
 /*===========================
 3. Blog Details
 ===========================*/
 
-.blog-list {}
+.blog-list {
+}
 
 .list-item {
     box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
@@ -1197,9 +1226,11 @@ END Contact Area
     color: #5b1ffa;
 }
 
-.blog-meta {}
+.blog-meta {
+}
 
-.blog-meta ul {}
+.blog-meta ul {
+}
 
 .blog-meta ul li {
     display: inline-block;
@@ -1297,7 +1328,8 @@ END Contact Area
     border-bottom: 1px solid #efeaea;
 }
 
-.comment-title {}
+.comment-title {
+}
 
 .comment-title h4 {
     font-size: 24px;
@@ -1314,9 +1346,11 @@ END Contact Area
     list-style-type: none;
 }
 
-.comment-list {}
+.comment-list {
+}
 
-.comment-info-inner {}
+.comment-info-inner {
+}
 
 .comment-info-inner article {
     padding: 51px 0px 0px 102px;
@@ -1341,7 +1375,7 @@ END Contact Area
     font-weight: 700;
     color: #555555;
     line-height: 13px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     letter-spacing: 0;
 }
 
@@ -1359,7 +1393,8 @@ END Contact Area
     color: #ef4836;
 }
 
-.comment-content {}
+.comment-content {
+}
 
 .comment-content p {
     font-size: 14px;
@@ -1375,13 +1410,15 @@ END Contact Area
     top: 48px;
 }
 
-.comment-reply a {}
+.comment-reply a {
+}
 
 .children {
     padding-left: 104px;
 }
 
-.related-post {}
+.related-post {
+}
 
 .related-post .rl-post-title h2,
 .comment-title h4 {
@@ -1396,7 +1433,7 @@ END Contact Area
     padding: 0px;
 }
 
-.related-post-list>div>div:last-child .single-blog {
+.related-post-list > div > div:last-child .single-blog {
     margin-bottom: 0;
 }
 
@@ -1409,9 +1446,11 @@ END Contact Area
     margin-top: 62px;
 }
 
-.comment-title h4 {}
+.comment-title h4 {
+}
 
-.leave-comment form {}
+.leave-comment form {
+}
 
 .leave-comment form input[type="text"] {
     width: 100%;
@@ -1467,7 +1506,7 @@ END Contact Area
 .leave-comment form textarea:focus,
 .leave-comment form input[type="text"]:focus {
     background: #ffffff;
-    box-shadow: 0px 0px 5px rgba(241, 80, 89,0.3);
+    box-shadow: 0px 0px 5px rgba(241, 80, 89, 0.3);
 }
 
 .leave-comment form input#comment-submit {
@@ -1502,7 +1541,7 @@ END Contact Area
 }
 
 .crumbs-inner {
-       width: 100%;
+    width: 100%;
     margin-top: 72px;
     padding: 120px 0px;
 }
@@ -1514,7 +1553,8 @@ END Contact Area
     font-size: 36px;
 }
 
-.crumbs-inner ul {}
+.crumbs-inner ul {
+}
 
 .crumbs-inner ul li {
     display: inline-block;
@@ -1534,7 +1574,7 @@ END Contact Area
 }
 
 .crumbs-inner ul li a:before {
-    content: '/';
+    content: "/";
     position: absolute;
     right: -16px;
     top: 0;
@@ -1591,7 +1631,7 @@ END Contact Area
     border-bottom: 1px solid #fff;
 }
 
-.flex-left-sidebar>div>div {
+.flex-left-sidebar > div > div {
     display: flex;
     flex-wrap: wrap-reverse;
 }
@@ -1614,7 +1654,8 @@ END Blog Standard
     margin-bottom: 0px;
 }
 
-.widget-search {}
+.widget-search {
+}
 
 .widget-search form {
     position: relative;
@@ -1637,7 +1678,7 @@ END Blog Standard
     border-color: #e8313b;
 }
 
-.widget-search form input:focus~button {
+.widget-search form input:focus ~ button {
     color: #fff;
     background-color: #e8313b;
 }
@@ -1658,7 +1699,8 @@ END Blog Standard
     transition: all 0.3s ease 0s;
 }
 
-.widget-recent-post {}
+.widget-recent-post {
+}
 
 .widget-title {
     margin-bottom: 30px;
@@ -1677,7 +1719,8 @@ END Blog Standard
     line-height: 21px;
 }
 
-.recent--post-list {}
+.recent--post-list {
+}
 
 .rc-single-post {
     overflow: hidden;
@@ -1712,7 +1755,7 @@ END Blog Standard
     letter-spacing: 0.01em;
     color: #535151;
     line-height: 22px;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     margin-top: -3px;
 }
 
@@ -1748,7 +1791,6 @@ END Blog Standard
     margin-bottom: 22px;
 }
 
-
 .widget--category-list ul li a:hover,
 .widget--archive-list ul li a:hover,
 .widget--category-list ul li a:hover::before,
@@ -1763,9 +1805,11 @@ END Blog Standard
     color: #c2b8b8;
 }
 
-.widget-tags {}
+.widget-tags {
+}
 
-.widget-tag-list {}
+.widget-tag-list {
+}
 
 .widget-tag-list a {
     display: inline-block;
@@ -1786,6 +1830,27 @@ END Blog Standard
     background-color: #e8313b;
 }
 
+/* Extra Style */
+.tech-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.tech-text {
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #000;
+}
+.tech-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 /*===========================
 END Blog Details
 ===========================*/
