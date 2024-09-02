@@ -7,7 +7,7 @@ This repository contains the backend code for the CoffeeShopManagement project.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/CoffeeShopManagement-Backend.git
+git clone https://github.com/FiveD-SE/CoffeShopMangementBackend.git
 ```
 
 2. Install dependencies:
