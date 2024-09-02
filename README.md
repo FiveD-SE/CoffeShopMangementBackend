@@ -1,4 +1,3 @@
-````markdown
 # CoffeeShopManagement Backend
 
 This repository contains the backend code for the CoffeeShopManagement project.
@@ -10,7 +9,6 @@ This repository contains the backend code for the CoffeeShopManagement project.
 ```bash
 git clone https://github.com/your-username/CoffeeShopManagement-Backend.git
 ```
-````
 
 2. Install dependencies:
 
@@ -120,7 +118,3 @@ Contributions are welcome! Please open an issue or submit a pull request.
 ## License
 
 This project is licensed under the MIT License.
-
-```
-
-```
